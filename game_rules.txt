@@ -1,0 +1,35 @@
+Game Rules for Roll A Ball - LEMONTEY Alice
+24/11/20 
+
+Collectables:
+- 3 types. Their type (defined randomly) is unknown before collision.
+- all types: when collision whith the player, it disappears with a sound depending of its type
+- type 1 : the player win X1 game points
+- type 2 : the player win X2 game points + the player wins Y1 life points
+- type 3 : the player win X3 game points + the player wins Y2 life points + inverted chase period begins
+
+Inverted chase period:
+- a time counter appears with Z1 seconds
+- all enemies become chased
+- at each second the time counter decreases
+- during the Z2 last seconds, the color of the counter is different
+- when the time counter equals 0, all the enemy become idle again
+
+Enemy chased behavior:
+- it color changes (same as collectables)
+- it moves as at its idle state
+- when collision with the player, it disappears 
+
+Game play is tuned with X1, X2, X3, Y1, Y2, Y3, Z1, Z2 values
+
+Starting parameters : 
+- Games Points X1 = 10
+- Games Points X2 = 20
+- Games Points X3 = 30
+- Life Points Y1 = 1
+- Life Points Y2 = 2
+- Time Counter Z1 = 10
+- Last chasing seconds Z2 = 3
+- Hitting a "not chased" ennemy = -1 life point
+- Speed = 10
+
